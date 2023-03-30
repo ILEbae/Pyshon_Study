@@ -1,0 +1,42 @@
+** if 문
+
+돈이 있으면 택시를 타고 , 돈이 없으면 걸어 간다.
+//
+money = True or False
+
+if Money:
+    print("택시를 타고 가라")
+print("aa") --> X 들여쓰기 주의
+else:
+    print("걸어가라")
+
+
+    ==> 택시를 타고 가라 or 걸어가라
+//
+
+
+1. x | y
+2. x & y
+3. not x : x가 거짓이면 참이다.
+
+
+** x in s , x not in s
+if 1 in [1,2,3]:
+    print(~)
+=>True
+
+1 not in [1,2,3]
+==>False 
+
+**다중 조건 판단 elif
+
+pocket = ['paper','cellphone']
+card = True
+if 'money' in pocket:
+    print("택시를 타고가라")
+elif card:
+    print("택시를 타고 가라")
+else:
+     print("걸어가라")
+
+==> 택시를 타고 가라
