@@ -1,0 +1,73 @@
+** 딕셔너리 자료형 **
+
+key와 value 로 이루어져있는 개념으로 
+예시를 들어서 dic = {'name'='seungjun' , 'phone':'01045646898'} 이라고 하면
+key 값은 name 과 , phone 이고 vaule 는 seungjun 과 01045646898 이다.
+
+** 딕셔너리 쌍 추가 , 삭제하기
+
+1. 딕셔너리 쌍추가하기
+a={1:'a'}
+a[2] = 'b' <-{2:'b'} 쌍 추가 
+print(a)
+
+==> {1:'a',2:'b'} 출력
+
+다른예시)
+a['name'] = 'seungjun' 추가.
+a[3] = [1,2,3] 추가
+
+2. 딕셔너리 요소 삭제하기.
+
+del a[1] -> 키가 1인 key:value 쌍 삭제
+
+**딕셔너리에서 key를 사용해 Value 얻기
+
+grade ={'pey':10,'jilliet':99}
+grade['pey'] <- Key가 'pey' 인 딕셔너리의 Value 를 반환
+-->10
+
+
+** 딕셔너리 관련함수
+
+1. Key 리스트 만들기 (keys)
+
+a={'name':'pey','phone' : '0105646511' ,'birth':'1118'}
+print(a.key())
+==>dict_keys(['name','phone','birth'])
+
+a.key 는 딕셔너리 a의 key만을 모아서 dict_key 객체를 돌려준다.
+
+2. Value 리스트 만들기(values)
+
+print(a.values())
+==>dict_vlaues(['pey','0105646511','1118']) 
+
+3.Key , Value 쌍 얻기 (items)
+
+print(a.items())
+==>dict_items([('name':'pey'),('phone' : '0105646511') ,('birth':'1118')])
+
+4. Key : Value 쌍 모두 지우기(clear)
+
+
+print(a.clear())
+
+==> {}
+
+
+5. Key 로 Value 얻기(get)
+
+a={'name':'pey','phone' : '0105646511' ,'birth':'1118'}
+print(a.get('name'))
+==>'pey'
+print(a.get('phone'))
+==>'01056465110'
+
+6. 해당 Key 가 딕셔너리 안에 있는지 조사하기 (in)
+a={'name':'pey','phone' : '0105646511' ,'birth':'1118'}
+print('name' in a)
+>> True
+
+print('email' in a)
+>> False
