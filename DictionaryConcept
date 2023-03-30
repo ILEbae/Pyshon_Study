@@ -1,4 +1,4 @@
-** 딕셔너리 자료형 **
+"""딕셔너리 자료형 **
 
 key와 value 로 이루어져있는 개념으로 
 예시를 들어서 dic = {'name'='seungjun' , 'phone':'01045646898'} 이라고 하면
@@ -71,3 +71,4 @@ print('name' in a)
 
 print('email' in a)
 >> False
+"""
