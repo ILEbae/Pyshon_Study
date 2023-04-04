@@ -1,3 +1,3 @@
-m,n= map(int,input().split())
-print(m-1+(n-1)*n) 
+M,N= map(int,input().split())
+print(M-1+(N-1)*M) 
     
